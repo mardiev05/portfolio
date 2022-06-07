@@ -297,6 +297,7 @@ body {
 .worked {
     width: 80%;
     margin: auto;
+    margin-top: 160px;
 }
 
 .worked .card__line {
@@ -326,6 +327,7 @@ body {
 .worked .exp__row-lists li:hover {
     background-color: #112340;
     border-left: 2px solid var(--green);
+    color: var(--green);
 }
 
 .exp {
