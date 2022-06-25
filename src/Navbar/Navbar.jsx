@@ -25,7 +25,6 @@ export default class Navbar extends Component {
                     <img src={logo} className="navbar__logo" alt="Logo" />
                 </div>
                 <div className="hour">
-                    <h4>{new Date().getHours() + ":" + new Date().getMinutes()}</h4>
                 </div>
                 <ol>
                     <li> <span>About</span></li>

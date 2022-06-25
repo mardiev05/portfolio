@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import Logo from "./Logo/Logo"
-import "./App.css"
 import Navbar from "./Navbar/Navbar"
 import Header from "./Header/Header"
 import AboutMe from "./AboutMe/AboutMe";
 import IveWorked from "./I've Worked/IveWorked";
+import Portfolios from "./Portfolio/Portfolios";
+import Projects from "./Projects/Projects";
+import "./App.css"
+
 
 
 export default class Main extends Component {
@@ -12,7 +15,7 @@ export default class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logo: false,
+            logo: true,
             scrollShow: true,
             scrollPos: 0,
             experiance: [
@@ -77,9 +80,9 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
-        // setTimeout(() => {
-        //     this.setState({ logo: !this.state.logo })
-        // }, 5000)
+        setTimeout(() => {
+            this.setState({ logo: !this.state.logo })
+        }, 5000)
         // window.addEventListener("scroll", this.scrollHandler)
         this.experianceHandler()
     }
@@ -103,6 +106,8 @@ export default class Main extends Component {
                 <div className="row">
                     <AboutMe />
                     <IveWorked expHandler={this.experianceHandler} newList={newExpList} />
+                    <Portfolios />
+                    <Projects />
                 </div>
             </div>
         </div>);
