@@ -6,6 +6,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import IveWorked from "./I've Worked/IveWorked";
 import Portfolios from "./Portfolio/Portfolios";
 import Projects from "./Projects/Projects";
+import Contact from "./Contact/Contact";
 import "./App.css"
 
 
@@ -108,6 +109,7 @@ export default class Main extends Component {
                     <IveWorked expHandler={this.experianceHandler} newList={newExpList} />
                     <Portfolios />
                     <Projects />
+                    <Contact />
                 </div>
             </div>
         </div>);
