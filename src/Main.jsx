@@ -7,6 +7,8 @@ import IveWorked from "./I've Worked/IveWorked";
 import Portfolios from "./Portfolio/Portfolios";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
+import SideIcons from "./SideIcons/Side"
 import "./App.css"
 
 
@@ -110,6 +112,8 @@ export default class Main extends Component {
                     <Portfolios />
                     <Projects />
                     <Contact />
+                    <Footer />
+                    <SideIcons />
                 </div>
             </div>
         </div>);
